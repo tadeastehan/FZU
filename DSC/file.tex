@@ -1,19 +1,26 @@
 
 \documentclass{article}
-\usepackage{graphicx} % Required for inserting images
-\usepackage{booktabs} % This should be in the preamble
-
+\usepackage{graphicx} % Required for resizing
+\usepackage{booktabs} % For table formatting
+\usepackage{textcomp,mathcomp}
+\usepackage[paperheight=6in,paperwidth=4in]{geometry}
+\thispagestyle{empty}
 \begin{document}
+
 \begin{table}[ht]
 \centering
-\begin{tabular}[t]{lcc}
+\resizebox{\textwidth}{!}{ % Resize the table to fit the width of the page
+\begin{tabular}{lc}
 \toprule
-&Treatment A&Treatment B\\
+ & \ \textcelsius \\
 \midrule
-John Smith&1&2\\
-Jane Doe&--&3\\
-Mary Johnson&4&5\\
+R^{A}_{s} & -53.87 \\
+A_{f} & 18.13 \\
+R^{M}_{s} & -46.01 \\
+M_{f} & -70.02 \\
 \bottomrule
 \end{tabular}
-\end{table}%
+}
+\end{table}
+
 \end{document}
