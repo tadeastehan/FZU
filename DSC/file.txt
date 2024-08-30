@@ -1,0 +1,19 @@
+
+\documentclass{article}
+\usepackage{graphicx} % Required for inserting images
+\usepackage{booktabs} % This should be in the preamble
+
+\begin{document}
+\begin{table}[ht]
+\centering
+\begin{tabular}[t]{lcc}
+\toprule
+&Treatment A&Treatment B\\
+\midrule
+John Smith&1&2\\
+Jane Doe&--&3\\
+Mary Johnson&4&5\\
+\bottomrule
+\end{tabular}
+\end{table}%
+\end{document}
