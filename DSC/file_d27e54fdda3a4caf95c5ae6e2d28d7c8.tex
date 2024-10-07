@@ -1,0 +1,29 @@
+
+\documentclass{article}
+\usepackage{graphicx} % Required for resizing
+\usepackage{booktabs} % For table formatting
+\usepackage{textcomp,mathcomp}
+\usepackage[paperheight=6in,paperwidth=4in]{geometry}
+\thispagestyle{empty}
+\begin{document}
+
+\begin{table}[ht]
+\centering
+\resizebox{\textwidth}{!}{ % Resize the table to fit the width of the page
+\begin{tabular}{lc}
+\toprule
+
+& \ \textbf\textcelsius \\
+\midrule
+\textbf{R{\scriptsize{$^{A}_{s}$}}} & \textbf{28.45} \\
+\textbf{A{\scriptsize{$^{f}$}}} & \textbf{56.03} \\
+\textbf{R{\scriptsize{$^{M}_{s}$}}} & \textbf{42.34} \\
+\textbf{R{\scriptsize{$^{M}_{f}$}}} & \textbf{18.53} \\
+\textbf{M{\scriptsize{$^{s}$}}} & \textbf{10.18} \\
+\textbf{M{\scriptsize{$^{f}$}}} & \textbf{-14.04} \\
+\bottomrule
+\end{tabular}
+}
+\end{table}
+
+\end{document}
